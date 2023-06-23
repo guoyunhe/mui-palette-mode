@@ -9,7 +9,7 @@ export default function App() {
     <ThemeProvider lightTheme={lightTheme} darkTheme={darkTheme}>
       <AppBar position="static" color="primary">
         <Toolbar>
-          <Typography flexGrow={1}>Funny Reader</Typography>
+          <Typography flexGrow={1}>Click the button on the right 👉</Typography>
           <PaletteModeButton />
         </Toolbar>
       </AppBar>

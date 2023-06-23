@@ -1,0 +1,82 @@
+{
+  "name": "mui-palette-mode",
+  "version": "1.0.0",
+  "description": "Toggle dark or light mode for your MUI apps",
+  "keywords": [
+    "react",
+    "mui",
+    "color-mode",
+    "palette-mode",
+    "light-mode",
+    "dark-mode"
+  ],
+  "homepage": "https://github.com/guoyunhe/mui-palette-mode#readme",
+  "bugs": {
+    "url": "https://github.com/guoyunhe/mui-palette-mode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/mui-palette-mode.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "MIT",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "react-lib-scripts build",
+    "deploy": "gh-pages -d build",
+    "format": "react-lib-scripts format",
+    "lint": "react-lib-scripts lint",
+    "start": "react-lib-scripts start",
+    "test": "react-lib-scripts test",
+    "watch": "react-lib-scripts watch"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "extends": "@guoyunhe/react-lib-scripts"
+  },
+  "jest": {
+    "preset": "@guoyunhe/react-lib-scripts"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@guoyunhe/react-lib-scripts": "^1.4.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@tsconfig/vite-react": "^2.0.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^18.16.18",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-doc-ui": "^1.0.1",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@mui/utils": "^5.13.1",
+    "use-local-storage": "^3.0.0"
+  }
+}

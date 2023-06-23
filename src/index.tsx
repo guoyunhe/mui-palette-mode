@@ -1,2 +1,3 @@
-export * from './PaletteModeButton';
-export * from './ThemeProvider';
+export * from './DualThemeProvider';
+export * from './PaletteModeIconButton';
+export * from './usePaletteMode';

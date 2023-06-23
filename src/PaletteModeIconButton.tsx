@@ -2,8 +2,8 @@ import { BrightnessMedium, DarkMode, LightMode } from '@mui/icons-material';
 import { IconButton, IconButtonProps } from '@mui/material';
 import { usePaletteMode } from './usePaletteMode';
 
-export function PaletteModeButton(props: IconButtonProps) {
-  const { paletteMode, userPaletteMode, setUserPaletteMode } = usePaletteMode();
+export function PaletteModeIconButton(props: IconButtonProps) {
+  const { userPaletteMode, setUserPaletteMode } = usePaletteMode();
   let icon = <BrightnessMedium />;
   switch (userPaletteMode) {
     case 'light':
@@ -15,7 +15,7 @@ export function PaletteModeButton(props: IconButtonProps) {
     default:
       icon = <BrightnessMedium />;
   }
-  console.log(paletteMode, userPaletteMode);
+
   return (
     <IconButton
       color="inherit"

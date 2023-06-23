@@ -1,18 +1,18 @@
 import { AppBar, Toolbar, Typography, createTheme } from '@mui/material';
-import { PaletteModeButton, ThemeProvider } from 'mui-palette-mode';
+import { DualThemeProvider, PaletteModeIconButton } from 'mui-palette-mode';
 
 const lightTheme = createTheme();
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 
 export default function App() {
   return (
-    <ThemeProvider lightTheme={lightTheme} darkTheme={darkTheme}>
+    <DualThemeProvider lightTheme={lightTheme} darkTheme={darkTheme} defaultPaletteMode="auto">
       <AppBar position="static" color="primary">
         <Toolbar>
           <Typography flexGrow={1}>Click the button on the right 👉</Typography>
-          <PaletteModeButton />
+          <PaletteModeIconButton />
         </Toolbar>
       </AppBar>
-    </ThemeProvider>
+    </DualThemeProvider>
   );
 }

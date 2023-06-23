@@ -1,7 +1,7 @@
 import { PaletteMode, Theme, createTheme } from '@mui/material';
 import { ReactNode } from 'react';
-import { BaseThemeProvider } from './BaseThemeProvider';
 import { DefaultPaletteModeProvider } from './DefaultPaletteModeContext';
+import { DualThemeProviderBase } from './DualThemeProviderBase';
 
 const defaultDarkTheme = createTheme({
   palette: {
@@ -15,24 +15,30 @@ const defaultLightTheme = createTheme({
   },
 });
 
-export interface ThemeProviderProps {
+export interface DualThemeProviderProps {
+  /** Dark theme object */
   darkTheme?: Theme;
+  /** Light theme object */
   lightTheme?: Theme;
+  /**
+   * Default palette mode
+   * @default 'auto'
+   */
   defaultPaletteMode?: PaletteMode | 'auto';
   children: ReactNode;
 }
 
-export function ThemeProvider({
+export function DualThemeProvider({
   darkTheme = defaultDarkTheme,
   lightTheme = defaultLightTheme,
   defaultPaletteMode = 'auto',
   children,
-}: ThemeProviderProps) {
+}: DualThemeProviderProps) {
   return (
     <DefaultPaletteModeProvider value={defaultPaletteMode}>
-      <BaseThemeProvider darkTheme={darkTheme} lightTheme={lightTheme}>
+      <DualThemeProviderBase darkTheme={darkTheme} lightTheme={lightTheme}>
         {children}
-      </BaseThemeProvider>
+      </DualThemeProviderBase>
     </DefaultPaletteModeProvider>
   );
 }

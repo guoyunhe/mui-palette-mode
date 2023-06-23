@@ -73,7 +73,9 @@
     "typescript": "^5.1.3"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "@mui/material": "^5.0.0",
+    "@mui/icons-material": "^5.0.0"
   },
   "dependencies": {
     "@mui/utils": "^5.13.1",

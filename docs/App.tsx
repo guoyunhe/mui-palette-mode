@@ -6,7 +6,7 @@ export default function App() {
   return (
     <DocContainer>
       <DocHeader title={PACKAGE_NAME + '@' + PACKAGE_VERSION} />
-      <p>Please edit "docs/App.tsx"...</p>
+      <p>Toggle dark or light mode for your MUI apps</p>
 
       <DocHeading>Install</DocHeading>
       <DocCodeBlock language="bash" code={`npm i ${PACKAGE_NAME}`} />

@@ -1,6 +1,6 @@
 {
   "name": "mui-palette-mode",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Toggle dark or light mode for your MUI apps",
   "keywords": [
     "react",

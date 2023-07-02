@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2023-07-03
+
+- Changed `use-local-storage` to `@guoyunhe/react-storage`, to support ESM
+
 ## 1.1.0 - 2023-07-01
 
 - Added `<PaletteModeButton/>` component

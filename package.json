@@ -79,6 +79,6 @@
   },
   "dependencies": {
     "@mui/utils": "^5.13.6",
-    "use-local-storage": "^3.0.0"
+    "@guoyunhe/react-storage": "^1.0.0"
   }
 }

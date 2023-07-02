@@ -1,6 +1,6 @@
+import { useStorage } from '@guoyunhe/react-storage';
 import { PaletteMode, useMediaQuery } from '@mui/material';
 import { Dispatch, SetStateAction, useCallback } from 'react';
-import useLocalStorage from 'use-local-storage';
 import { PaletteModeContextValue, usePaletteModeContext } from './PaletteModeContext';
 
 export interface UsePaletteModeReturn extends PaletteModeContextValue {
@@ -17,7 +17,7 @@ export function usePaletteMode() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const systemPaletteMode = prefersDarkMode ? 'dark' : 'light';
 
-  const [userPaletteMode, setUserPaletteMode] = useLocalStorage<PaletteMode | 'auto'>(
+  const [userPaletteMode, setUserPaletteMode] = useStorage<PaletteMode | 'auto'>(
     'theme_palette_mode',
     defaultPaletteMode
   );
